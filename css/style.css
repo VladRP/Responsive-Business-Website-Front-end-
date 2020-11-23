@@ -1,0 +1,226 @@
+body{
+    /*font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    line-height:1.5;  Distanta dintre randuri */ 
+    font: 15px/1.5 Arial,Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+    background-color:#f4f4f4;
+}
+
+.container{
+    width:80%; /*ajusteaza latimea textului in functie de pagina*/
+    margin:auto; /*duce textul catre mijloc*/
+    overflow:hidden; /*ce depaseste div-ul este ascuns*/
+}
+
+
+ul{
+    margin:0;
+    padding:0
+}
+
+.button1{
+    height:37px;
+    background:orange;
+    border:0;
+    padding-left:20px;
+    padding-right:20px;
+    color:white;
+}
+
+.dark{
+    padding:15px;
+    background:#35424a;
+    color:#ffffff;
+    margin-top:10px;
+    margin-bottom:10px;
+
+    width:100%
+}
+header{
+    background:#35424a;
+    color:#ffffff;
+    padding-top:30px;
+    min-height:70px;
+    border-bottom:orange 3px solid;
+}
+
+    header a{
+        color:#ffffff;
+        text-decoration:none;
+        text-transform:uppercase;
+        font-size:15px;                           /* toate link-urile anchor din header vor fi stilizate conform acestei reguli*/
+}
+
+    header li{
+        float:left;
+        display:inline;
+        padding:0 20px 0 20px; /*top right bottom left */
+    }
+
+    header #branding{
+        float:left;
+    }
+
+    header #branding h1{
+        margin:0;
+    }
+
+    header nav{
+        float:right;
+        margin-top:20px;
+    }
+
+    header .highlight, header .current a{
+        color:orange;
+        font-weight: bold;
+    }
+
+    header a:hover{
+        color:#cccccc;
+        font-weight:bold;
+    }
+    
+    #showcase{
+        min-height:400px;
+        background:url('../img/desk.jpg') 0 -10px no-repeat;
+        background-size:cover;
+        text-align:right;
+    }
+
+    #showcase h1{
+        font-size:30px;
+        margin-bottom:10px;
+    }
+
+    #newsletter{
+        padding:15px;
+        color:#ffffff;
+        background:#35424a;
+    }
+
+    #newsletter h1{
+        float:left;
+    }
+
+    #newsletter form{
+        float:right;
+        margin-top:15px;
+    }
+
+    #newsletter input[type="email"]{
+        padding:4px;
+        height:25px;
+        width:250px;
+    }
+
+    #boxes{
+        margin-top:20px;
+
+    }
+
+    #boxes .box{
+        float:left;
+        width:30%;
+        text-align:center;
+        padding: 10px;
+    }
+
+    #boxes .boxservices{
+        float:left;
+        width:90%;
+        
+        padding: 0;
+    }
+
+    #boxes .boxservices img{
+        width:90px;
+
+    }
+
+
+    #boxes .box img{
+        width:90px;
+
+    }
+
+    aside#sidebar{
+        float:right;
+        width:30%;
+        
+    }
+
+    aside#sidebar .quote input, aside#sidebar .quote textarea{
+        width:90%;
+        padding:5px;
+    }
+
+    ul#services li{
+        list-style:none;
+        padding:20px;
+        border: #cccccc solid 1px;
+        margin-bottom:5px;
+        background:#e6e6e6;
+    }
+
+    footer{
+        
+      
+        padding:20px;
+        
+        color:white;
+        background-color:orange;
+        text-align:left;
+    }
+
+    article#main-col{
+        float:left;
+        width:65%
+    }
+
+#location{
+    padding:30px;
+    float:left;
+    text-align:center;
+    width:90%;
+}
+
+.servicelist{
+    width:60%;
+}
+
+/* Media Queries */
+
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+        float:none;
+        text-align:center;
+        width:100%;
+    }
+    
+    header{
+        padding-bottom:20px;
+    }
+
+    #showcase h1{
+        margin-top:40px
+    }
+
+    #newsletter button, .quote button{
+        display:block;
+        width:100%;
+    }
+
+    #newsletter form input[type="email"], .quote input, .quote textarea{
+        width:100%;
+        margin-bottom:5px;
+    }
+}
